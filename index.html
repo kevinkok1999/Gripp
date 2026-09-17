@@ -3,109 +3,301 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
-  <meta name="theme-color" content="#0b1220" />
-  <meta name="description" content="GRIP helpt huishoudens zien wat vandaag kan, wat morgen komt en welke volgende stap financiële rust geeft." />
-  <title>GRIP — Meer grip op je geld. Minder zorgen over morgen.</title>
+  <meta name="theme-color" content="#07101d" />
+  <meta name="description" content="GRIP helpt huishoudens vandaag begrijpen, vooruitkijken en stap voor stap meer financiële rust opbouwen." />
+  <meta name="color-scheme" content="dark light" />
+  <title>GRIP — Meer grip op je geld</title>
   <style>
-    :root{--bg:#07101d;--panel:#0d1928;--panel2:#122235;--text:#f6f8fb;--muted:#a9b8c9;--line:rgba(255,255,255,.10);--brand:#66e3b4;--brand2:#78a9ff;--warn:#ffd37a;--danger:#ff8f9b;--shadow:0 24px 70px rgba(0,0,0,.28);--r:24px}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 85% 0%,rgba(120,169,255,.13),transparent 34%),radial-gradient(circle at 8% 18%,rgba(102,227,180,.10),transparent 28%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.5}button,input{font:inherit}a{color:inherit;text-decoration:none}.wrap{width:min(1160px,calc(100% - 36px));margin:auto}.nav{position:sticky;top:0;z-index:20;background:rgba(7,16,29,.78);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}.navin{height:72px;display:flex;align-items:center;justify-content:space-between;gap:24px}.logo{display:flex;align-items:center;gap:10px;font-weight:900;letter-spacing:-.03em}.mark{width:36px;height:36px;border-radius:12px;background:linear-gradient(135deg,var(--brand),var(--brand2));display:grid;place-items:center;color:#07101d;font-weight:1000}.links{display:flex;align-items:center;gap:22px;color:var(--muted);font-size:14px}.cta,.ghost{border:0;border-radius:14px;padding:13px 18px;font-weight:800;cursor:pointer;transition:.2s transform,.2s opacity}.cta{background:var(--brand);color:#07101d}.cta:hover,.ghost:hover{transform:translateY(-1px)}.ghost{background:rgba(255,255,255,.06);color:var(--text);border:1px solid var(--line)}.hero{padding:84px 0 54px;display:grid;grid-template-columns:1.08fr .92fr;gap:50px;align-items:center}.eyebrow{display:inline-flex;gap:8px;align-items:center;padding:7px 11px;border:1px solid rgba(102,227,180,.24);background:rgba(102,227,180,.07);color:#a8f2d6;border-radius:999px;font-size:13px;font-weight:800}.hero h1{font-size:clamp(45px,7vw,82px);line-height:.98;letter-spacing:-.06em;margin:20px 0 22px;max-width:780px}.hero h1 span{background:linear-gradient(90deg,var(--brand),#a6c8ff);-webkit-background-clip:text;background-clip:text;color:transparent}.lead{font-size:clamp(18px,2vw,22px);color:var(--muted);max-width:690px}.heroactions{display:flex;gap:12px;flex-wrap:wrap;margin:30px 0 22px}.trustline{display:flex;gap:18px;flex-wrap:wrap;color:var(--muted);font-size:13px}.trustline b{color:var(--text)}.phone{background:linear-gradient(180deg,#111f30,#0b1624);border:1px solid var(--line);border-radius:34px;padding:18px;box-shadow:var(--shadow);max-width:420px;margin-left:auto}.phonehead{display:flex;justify-content:space-between;color:var(--muted);font-size:12px;margin:4px 4px 20px}.good{background:rgba(102,227,180,.09);border:1px solid rgba(102,227,180,.16);border-radius:20px;padding:18px}.good small{color:#a8f2d6}.good strong{font-size:25px;display:block;margin-top:4px}.metric{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:12px 0}.mini{padding:16px;background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:18px}.mini small{color:var(--muted)}.mini b{font-size:22px;display:block;margin-top:2px}.action{margin-top:12px;background:#f7fafc;color:#0a1420;border-radius:20px;padding:18px}.action small{color:#607083;font-weight:700}.action b{display:block;font-size:17px;margin:5px 0}.action p{color:#526175;margin:0;font-size:13px}.section{padding:70px 0}.sectionhead{max-width:720px;margin-bottom:30px}.section h2{font-size:clamp(34px,5vw,56px);line-height:1.02;letter-spacing:-.045em;margin:0 0 14px}.sectionhead p{color:var(--muted);font-size:18px}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:rgba(13,25,40,.78);border:1px solid var(--line);border-radius:var(--r);padding:25px}.icon{width:44px;height:44px;border-radius:14px;background:rgba(120,169,255,.11);display:grid;place-items:center;font-size:20px;margin-bottom:18px}.card h3{font-size:20px;margin:0 0 8px}.card p{color:var(--muted);margin:0}.quick{display:grid;grid-template-columns:.85fr 1.15fr;gap:26px;align-items:start}.quickintro{position:sticky;top:100px}.formbox{background:#f7fafc;color:#0b1522;border-radius:30px;padding:26px;box-shadow:var(--shadow)}.formbox h3{font-size:26px;letter-spacing:-.03em;margin:0 0 6px}.formbox .sub{color:#667587;margin:0 0 22px}.field{margin:16px 0}.field label{display:block;font-weight:800;margin-bottom:7px}.field .help{display:block;color:#758395;font-size:12px;margin-top:5px}.inputwrap{display:flex;align-items:center;background:white;border:1px solid #dbe3ec;border-radius:14px;padding:0 14px;min-height:52px}.inputwrap span{color:#738196;font-weight:800}.inputwrap input{border:0;outline:0;flex:1;min-width:0;padding:14px 8px;font-size:17px;background:transparent;color:#0b1522}.full{width:100%;padding:15px 18px;margin-top:8px}.result{display:none;margin-top:22px;border-top:1px solid #dbe3ec;padding-top:22px}.result.show{display:block}.resulttop{display:flex;justify-content:space-between;gap:12px;align-items:center}.badge{display:inline-flex;padding:6px 10px;border-radius:999px;font-size:12px;font-weight:900;background:#e8f8f1;color:#176545}.bigmoney{font-size:42px;letter-spacing:-.05em;font-weight:950;margin:7px 0}.resultgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:15px}.resultmini{background:#fff;border:1px solid #e0e7ee;border-radius:16px;padding:14px}.resultmini small{color:#788697}.resultmini b{display:block;margin-top:4px}.next{margin-top:14px;background:#0b1522;color:#fff;border-radius:17px;padding:16px}.next small{color:#a8f2d6;font-weight:800}.next b{display:block;margin-top:3px}.privacy{display:flex;gap:9px;align-items:flex-start;color:#6f7f91;font-size:12px;margin-top:14px}.band{background:linear-gradient(120deg,rgba(102,227,180,.12),rgba(120,169,255,.12));border:1px solid var(--line);border-radius:30px;padding:32px;display:flex;justify-content:space-between;align-items:center;gap:28px}.band h3{font-size:30px;margin:0 0 7px;letter-spacing:-.04em}.band p{margin:0;color:var(--muted)}footer{padding:45px 0 60px;color:var(--muted);font-size:13px}.footerin{display:flex;justify-content:space-between;gap:24px;border-top:1px solid var(--line);padding-top:24px}.tiny{max-width:700px}.hide-desktop{display:none}@media(max-width:860px){.links a:not(.cta){display:none}.hero{grid-template-columns:1fr;padding-top:55px}.phone{margin:8px auto 0;max-width:500px;width:100%}.grid3,.quick{grid-template-columns:1fr}.quickintro{position:static}.band{align-items:flex-start;flex-direction:column}.section{padding:54px 0}.hero h1{font-size:clamp(46px,13vw,70px)}}@media(max-width:520px){.wrap{width:min(100% - 24px,1160px)}.navin{height:64px}.logo{font-size:15px}.mark{width:32px;height:32px}.links .cta{padding:10px 12px}.hero{padding-top:42px;gap:32px}.hero h1{font-size:45px}.lead{font-size:17px}.heroactions{display:grid}.heroactions a,.heroactions button{text-align:center;width:100%}.metric,.resultgrid{grid-template-columns:1fr}.formbox{padding:20px;border-radius:24px}.phone{border-radius:28px}.trustline{display:grid;gap:8px}.footerin{flex-direction:column}.band{padding:24px}.hide-mobile{display:none}.hide-desktop{display:block}}
+    :root{
+      --bg:#07101d;--bg2:#0b1624;--panel:#0d1928;--panel2:#122235;--soft:#f4f8fb;
+      --text:#f8fafc;--ink:#0b1522;--muted:#a9b8c9;--muted2:#667587;--line:rgba(255,255,255,.11);
+      --brand:#72e6b8;--brand2:#83afff;--warn:#ffd37a;--danger:#ff9ca8;--ok:#80e6ba;
+      --shadow:0 24px 70px rgba(0,0,0,.28);--r:26px;--rs:18px;--max:1180px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:
+      radial-gradient(circle at 90% 0%,rgba(131,175,255,.15),transparent 30%),
+      radial-gradient(circle at 8% 18%,rgba(114,230,184,.10),transparent 26%),var(--bg);
+      color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.55}
+    button,input,select{font:inherit}button{cursor:pointer}a{color:inherit;text-decoration:none}
+    img{display:block;max-width:100%}.wrap{width:min(var(--max),calc(100% - 36px));margin:auto}
+    .skip{position:absolute;left:-9999px;top:8px;background:#fff;color:#000;padding:10px 14px;border-radius:10px;z-index:999}
+    .skip:focus{left:12px}
+    .nav{position:sticky;top:0;z-index:50;background:rgba(7,16,29,.82);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
+    .navin{height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}.logo{display:flex;align-items:center;gap:10px;font-weight:950;letter-spacing:-.04em}
+    .mark{width:38px;height:38px;border-radius:13px;background:linear-gradient(135deg,var(--brand),var(--brand2));display:grid;place-items:center;color:#07101d;font-weight:1000;box-shadow:0 8px 28px rgba(114,230,184,.18)}
+    .links{display:flex;align-items:center;gap:20px;color:var(--muted);font-size:14px}.links a:hover{color:#fff}
+    .btn{border:0;border-radius:14px;padding:13px 18px;font-weight:850;transition:.18s transform,.18s opacity,.18s background;display:inline-flex;align-items:center;justify-content:center;gap:8px}
+    .btn:hover{transform:translateY(-1px)}.primary{background:var(--brand);color:#06121d}.secondary{background:rgba(255,255,255,.07);color:#fff;border:1px solid var(--line)}
+    .smallbtn{padding:10px 13px;border-radius:12px;font-size:13px}.hero{padding:76px 0 52px;display:grid;grid-template-columns:1.04fr .96fr;gap:52px;align-items:center}
+    .eyebrow{display:inline-flex;align-items:center;gap:8px;padding:7px 11px;border:1px solid rgba(114,230,184,.24);background:rgba(114,230,184,.07);color:#b8f5dc;border-radius:999px;font-size:12px;font-weight:900;letter-spacing:.04em;text-transform:uppercase}
+    h1,h2,h3,p{margin-top:0}.hero h1{font-size:clamp(46px,7vw,82px);line-height:.97;letter-spacing:-.065em;margin:18px 0 20px;max-width:760px}.hero h1 span{background:linear-gradient(90deg,var(--brand),#b7cffd);-webkit-background-clip:text;background-clip:text;color:transparent}
+    .lead{font-size:clamp(18px,2vw,22px);color:var(--muted);max-width:690px}.heroactions{display:flex;gap:12px;flex-wrap:wrap;margin:28px 0 20px}.trustline{display:flex;gap:14px;flex-wrap:wrap;color:var(--muted);font-size:13px}.trustline b{color:#fff}
+    .heroCard{position:relative;border-radius:32px;overflow:hidden;min-height:520px;border:1px solid var(--line);box-shadow:var(--shadow);background:#0d1928}
+    .heroCard img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.6}.heroCard:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(7,16,29,.05),rgba(7,16,29,.94) 72%)}
+    .heroOverlay{position:absolute;z-index:2;left:20px;right:20px;bottom:20px;background:rgba(8,18,29,.8);border:1px solid rgba(255,255,255,.13);backdrop-filter:blur(14px);border-radius:22px;padding:18px}
+    .statusrow{display:flex;justify-content:space-between;gap:14px;align-items:center}.statusrow small{color:#b8f5dc;font-weight:800}.heroMoney{font-size:34px;font-weight:950;letter-spacing:-.04em;margin-top:4px}.minirow{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}.mini{padding:13px;border-radius:15px;background:rgba(255,255,255,.06);border:1px solid var(--line)}.mini small{display:block;color:var(--muted);font-size:11px}.mini b{font-size:18px}
+    .section{padding:72px 0}.sectionhead{max-width:780px;margin-bottom:30px}.sectionhead h2{font-size:clamp(34px,5vw,58px);line-height:1.02;letter-spacing:-.05em;margin-bottom:13px}.sectionhead p{font-size:18px;color:var(--muted)}
+    .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}.card{background:rgba(13,25,40,.8);border:1px solid var(--line);border-radius:var(--r);padding:24px}.card h3{margin-bottom:8px}.card p{color:var(--muted);margin-bottom:0}.icon{width:46px;height:46px;border-radius:15px;background:rgba(131,175,255,.12);display:grid;place-items:center;font-size:20px;margin-bottom:18px}
+    .appShell{background:rgba(10,20,33,.74);border:1px solid var(--line);border-radius:32px;overflow:hidden;box-shadow:var(--shadow)}.appTop{padding:22px 22px 0}.appTitle{display:flex;justify-content:space-between;gap:16px;align-items:flex-start}.appTitle h2{font-size:30px;margin-bottom:3px}.appTitle p{color:var(--muted);margin:0}.appTabs{display:flex;gap:8px;overflow:auto;padding:18px 22px;border-bottom:1px solid var(--line);scrollbar-width:none}.appTabs::-webkit-scrollbar{display:none}
+    .tabbtn{white-space:nowrap;border:1px solid var(--line);background:rgba(255,255,255,.04);color:var(--muted);padding:10px 13px;border-radius:12px;font-weight:800}.tabbtn.active{background:var(--brand);border-color:var(--brand);color:#07101d}.appPanel{display:none;padding:24px}.appPanel.active{display:block}
+    .dashboard{display:grid;grid-template-columns:1.1fr .9fr;gap:18px}.light{background:var(--soft);color:var(--ink);border-radius:24px;padding:23px}.light p{color:var(--muted2)}.kpi{font-size:44px;font-weight:950;letter-spacing:-.055em;line-height:1.05;margin:5px 0}.label{font-size:12px;font-weight:900;letter-spacing:.04em;text-transform:uppercase;color:var(--muted2)}
+    .progress{height:12px;border-radius:99px;background:#dfe7ed;overflow:hidden;margin:12px 0}.progress>span{display:block;height:100%;width:0;background:linear-gradient(90deg,#5fd7a7,#77aaff);border-radius:inherit;transition:.3s width}.darkList{display:grid;gap:10px}.listitem{display:flex;justify-content:space-between;gap:16px;align-items:center;padding:14px 15px;border:1px solid var(--line);border-radius:16px;background:rgba(255,255,255,.04)}.listitem small{display:block;color:var(--muted)}.listitem b{text-align:right}.signal{width:10px;height:10px;border-radius:50%;background:var(--brand);flex:0 0 auto}.signal.warn{background:var(--warn)}.signal.danger{background:var(--danger)}
+    .formgrid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field{margin-bottom:14px}.field label{display:block;font-size:13px;font-weight:850;margin-bottom:7px}.input{display:flex;align-items:center;border:1px solid #dce4ea;background:#fff;border-radius:14px;min-height:50px;padding:0 13px}.input span{color:#758395;font-weight:850}.input input,.input select{width:100%;border:0;outline:0;background:transparent;color:#09141f;padding:13px 8px;min-width:0}.input:focus-within{outline:3px solid rgba(87,140,255,.18);border-color:#7aa7ff}.hint{font-size:11px;color:#7a8998;margin-top:5px}.light .btn.primary{width:100%;margin-top:4px}.resultbox{display:none;margin-top:18px;padding-top:18px;border-top:1px solid #dae2e9}.resultbox.show{display:block}.resultcards{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:13px}.rmini{border:1px solid #e0e7ed;background:#fff;border-radius:15px;padding:13px}.rmini small{color:#7a8896;display:block}.rmini b{display:block;margin-top:3px}
+    .timeline{position:relative;padding-left:26px;display:grid;gap:15px}.timeline:before{content:"";position:absolute;left:8px;top:8px;bottom:8px;width:2px;background:rgba(255,255,255,.12)}.timeitem{position:relative;border:1px solid var(--line);border-radius:18px;padding:16px;background:rgba(255,255,255,.04)}.timeitem:before{content:"";position:absolute;width:12px;height:12px;border-radius:50%;background:var(--brand);left:-24px;top:22px;box-shadow:0 0 0 5px var(--bg2)}.timeitem.warn:before{background:var(--warn)}.timeitem.danger:before{background:var(--danger)}.timeitem small{color:var(--muted)}.timeitem h3{margin:4px 0 5px}.timeitem p{margin:0;color:var(--muted)}
+    .opportunities{display:grid;gap:12px}.opp{display:grid;grid-template-columns:auto 1fr auto;gap:14px;align-items:center;border:1px solid var(--line);border-radius:18px;padding:16px;background:rgba(255,255,255,.04)}.opp .oppIcon{width:42px;height:42px;border-radius:13px;display:grid;place-items:center;background:rgba(114,230,184,.1)}.opp small{color:var(--muted)}.opp strong{display:block}.oppValue{font-weight:950;color:#b8f5dc;text-align:right}.oppValue small{font-weight:500}
+    .photoBand{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:stretch}.photo{position:relative;overflow:hidden;border-radius:28px;min-height:410px;border:1px solid var(--line)}.photo img{width:100%;height:100%;object-fit:cover}.photo:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(5,13,22,.86))}.photoText{position:absolute;left:22px;right:22px;bottom:18px;z-index:2}.photoText h3{font-size:30px;line-height:1.05;margin-bottom:7px}.photoText p{color:#d2dbe5;margin:0}.quoteCard{display:flex;flex-direction:column;justify-content:center;background:linear-gradient(145deg,rgba(114,230,184,.11),rgba(131,175,255,.10));border:1px solid var(--line);border-radius:28px;padding:34px}.quoteCard h3{font-size:clamp(30px,4vw,48px);line-height:1.03;letter-spacing:-.045em;margin-bottom:16px}.quoteCard p{color:var(--muted);font-size:17px}
+    .faq{display:grid;gap:10px}.faq details{border:1px solid var(--line);border-radius:17px;background:rgba(255,255,255,.04);padding:16px 18px}.faq summary{cursor:pointer;font-weight:850}.faq p{color:var(--muted);margin:10px 0 0}.footer{padding:40px 0 60px;color:var(--muted);font-size:13px}.footerin{display:flex;justify-content:space-between;gap:20px;border-top:1px solid var(--line);padding-top:22px}.credit a{text-decoration:underline}
+    .toast{position:fixed;left:50%;bottom:24px;transform:translate(-50%,120px);opacity:0;z-index:100;background:#fff;color:#09141f;padding:12px 16px;border-radius:13px;box-shadow:0 14px 40px rgba(0,0,0,.32);font-weight:800;transition:.25s}.toast.show{transform:translate(-50%,0);opacity:1}.sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    @media(max-width:900px){.links a:not(.navcta){display:none}.hero{grid-template-columns:1fr;padding-top:52px}.heroCard{min-height:460px}.grid3,.dashboard,.grid2,.photoBand{grid-template-columns:1fr}.section{padding:56px 0}.appTitle{flex-direction:column}.formgrid{grid-template-columns:1fr}.resultcards{grid-template-columns:1fr 1fr}.photo{min-height:350px}}
+    @media(max-width:560px){.wrap{width:min(var(--max),calc(100% - 24px))}.navin{height:64px}.mark{width:34px;height:34px}.links .navcta{padding:10px 12px;font-size:12px}.hero{padding-top:38px;gap:28px}.hero h1{font-size:46px}.lead{font-size:17px}.heroactions{display:grid}.heroactions .btn{width:100%}.heroCard{min-height:430px}.trustline{display:grid;gap:6px}.appPanel{padding:16px}.appTop{padding:18px 16px 0}.appTabs{padding:14px 16px}.light{padding:18px}.kpi{font-size:38px}.resultcards{grid-template-columns:1fr}.opp{grid-template-columns:auto 1fr}.oppValue{grid-column:2;text-align:left}.footerin{flex-direction:column}.minirow{grid-template-columns:1fr}.photoText h3{font-size:25px}}
   </style>
 </head>
 <body>
-  <nav class="nav"><div class="wrap navin"><a class="logo" href="#top" aria-label="GRIP home"><span class="mark">G</span><span>GRIP</span></a><div class="links"><a href="#hoe">Hoe het werkt</a><a href="#quick">Quick Check</a><a href="#visie">Vooruitkijken</a><a class="cta" href="#quick">Check mijn situatie</a></div></div></nav>
-
-  <main id="top">
-    <section class="wrap hero">
-      <div>
-        <div class="eyebrow">● GRIP Alpha · eerste publieke versie</div>
-        <h1>Meer grip op je geld.<br><span>Minder zorgen over morgen.</span></h1>
-        <p class="lead">Zie wat je veilig kunt uitgeven, wat eraan komt en welke volgende stap vandaag het meeste rust geeft — zonder financieel jargon.</p>
-        <div class="heroactions"><a class="cta" href="#quick">Doe de gratis Quick Check</a><a class="ghost" href="#hoe">Bekijk hoe GRIP werkt</a></div>
-        <div class="trustline"><span><b>Geen bankkoppeling nodig</b></span><span>•</span><span>Je invoer blijft in deze browser</span><span>•</span><span>Binnen ± 1 minuut inzicht</span></div>
+  <a class="skip" href="#main">Ga naar de inhoud</a>
+  <nav class="nav" aria-label="Hoofdnavigatie">
+    <div class="wrap navin">
+      <a class="logo" href="#top" aria-label="GRIP home"><span class="mark" aria-hidden="true">G</span><span>GRIP</span></a>
+      <div class="links">
+        <a href="#hoe">Hoe het werkt</a><a href="#app">Probeer GRIP</a><a href="#rust">Financiële rust</a><a href="#faq">Vragen</a>
+        <a class="btn primary navcta" href="#app">Start gratis</a>
       </div>
-      <div class="phone" aria-label="Voorbeeld GRIP dashboard">
-        <div class="phonehead"><span>Vandaag</span><span>GRIP</span></div>
-        <div class="good"><small>STATUS VANDAAG</small><strong>Je zit goed tot je volgende inkomen.</strong></div>
-        <div class="metric"><div class="mini"><small>Veilig te besteden</small><b>€ 186</b></div><div class="mini"><small>Einde maand</small><b>€ 318</b></div></div>
-        <div class="action"><small>BESTE ACTIE VANDAAG</small><b>Reserveer €37 voor een jaarlijkse rekening</b><p>Zo voorkom je dat die rekening later als verrassing komt.</p></div>
+    </div>
+  </nav>
+
+  <main id="main">
+    <section class="wrap hero" id="top">
+      <div>
+        <div class="eyebrow">GRIP Alpha · lokaal & zonder account</div>
+        <h1>Meer grip op je geld.<br><span>Minder zorgen over morgen.</span></h1>
+        <p class="lead">GRIP vertaalt je financiële situatie naar gewone taal: wat kun je vandaag veilig besteden, wat komt eraan en welke stap geeft nu het meeste rust?</p>
+        <div class="heroactions"><a class="btn primary" href="#app">Doe de gratis Quick Check</a><a class="btn secondary" href="#hoe">Bekijk hoe het werkt</a></div>
+        <div class="trustline"><span><b>Geen bankkoppeling nodig</b></span><span>•</span><span>Geen account nodig</span><span>•</span><span>Gegevens blijven in deze browser</span></div>
+      </div>
+      <div class="heroCard" aria-label="Voorbeeld van een rustig financieel overzicht">
+        <img src="https://images.unsplash.com/photo-1762831063004-bbd3ea38ba3a?auto=format&fit=crop&w=1400&q=82" alt="Rustige werkplek met notitieboek, calculator en groene pen voor financiële planning" loading="eager" decoding="async" />
+        <div class="heroOverlay">
+          <div class="statusrow"><div><small>VANDAAG</small><div id="heroStatus">Je eerste overzicht staat klaar.</div></div><span aria-hidden="true">●</span></div>
+          <div class="heroMoney" id="heroMoney">€ —</div>
+          <div class="minirow"><div class="mini"><small>Maandruimte</small><b id="heroMargin">Nog invullen</b></div><div class="mini"><small>Rustbuffer</small><b id="heroDays">Nog invullen</b></div></div>
+        </div>
       </div>
     </section>
 
     <section class="wrap section" id="hoe">
-      <div class="sectionhead"><h2>GRIP denkt ingewikkeld.<br>Jij hoeft dat niet te doen.</h2><p>Geen spreadsheets, rapportcijfers of financiële vaktaal. GRIP vertaalt je situatie naar drie simpele vragen.</p></div>
+      <div class="sectionhead"><h2>GRIP denkt ingewikkeld.<br>Jij hoeft dat niet te doen.</h2><p>Geen financieel rapportcijfer en geen jargon. Alles draait om drie vragen die iedereen moet kunnen begrijpen.</p></div>
       <div class="grid3">
-        <article class="card"><div class="icon">◎</div><h3>Hoe sta ik er nu voor?</h3><p>Zie wat er binnenkomt, wat eruit gaat en hoeveel ruimte er ongeveer overblijft.</p></article>
-        <article class="card"><div class="icon">→</div><h3>Wat komt eraan?</h3><p>Maak kosten die later komen nu al zichtbaar, zodat een dure maand je niet verrast.</p></article>
-        <article class="card"><div class="icon">✓</div><h3>Wat kan ik vandaag doen?</h3><p>GRIP zet inzicht om in één duidelijke volgende stap in plaats van tien waarschuwingen tegelijk.</p></article>
+        <article class="card"><div class="icon" aria-hidden="true">◎</div><h3>Hoe sta ik er nu voor?</h3><p>Je ziet in één oogopslag wat er binnenkomt, wat eruit gaat en hoeveel ruimte er ongeveer overblijft.</p></article>
+        <article class="card"><div class="icon" aria-hidden="true">→</div><h3>Wat komt eraan?</h3><p>Grotere rekeningen worden zichtbaar voordat ze een probleem worden. GRIP helpt ze in kleine stappen op te vangen.</p></article>
+        <article class="card"><div class="icon" aria-hidden="true">✓</div><h3>Wat kan ik nu doen?</h3><p>In plaats van tien waarschuwingen tegelijk krijg je een paar concrete acties die je situatie kunnen verbeteren.</p></article>
       </div>
     </section>
 
-    <section class="wrap section quick" id="quick">
-      <div class="quickintro"><div class="eyebrow">GRATIS · GEEN ACCOUNT</div><div class="sectionhead" style="margin-top:18px"><h2>Check je maand in ongeveer één minuut.</h2><p>Vul alleen globale bedragen in. Deze Alpha rekent lokaal in je browser en stuurt je invoer nergens naartoe.</p></div><div class="card"><h3>Wat krijg je?</h3><p>Een eerste schatting van je maandruimte, hoeveel dagen je buffer ongeveer dekt en hoeveel je maandelijks kunt reserveren voor een bekende jaarlijkse rekening.</p></div></div>
-      <div class="formbox">
-        <h3>GRIP Quick Check</h3><p class="sub">Rond bedragen gerust af. Het gaat eerst om overzicht, niet om perfectie.</p>
-        <form id="gripForm">
-          <div class="field"><label for="income">Wat komt er netto per maand binnen?</label><div class="inputwrap"><span>€</span><input id="income" inputmode="decimal" type="number" min="0" step="10" placeholder="2500" required></div></div>
-          <div class="field"><label for="fixed">Je vaste lasten per maand</label><div class="inputwrap"><span>€</span><input id="fixed" inputmode="decimal" type="number" min="0" step="10" placeholder="1550" required></div><span class="help">Bijvoorbeeld wonen, energie, verzekeringen, telefoon en abonnementen.</span></div>
-          <div class="field"><label for="living">Boodschappen, vervoer en andere normale uitgaven</label><div class="inputwrap"><span>€</span><input id="living" inputmode="decimal" type="number" min="0" step="10" placeholder="500" required></div></div>
-          <div class="field"><label for="savings">Beschikbare buffer / spaargeld</label><div class="inputwrap"><span>€</span><input id="savings" inputmode="decimal" type="number" min="0" step="10" placeholder="1200" required></div></div>
-          <div class="field"><label for="annual">Bekende grotere rekening die eraan komt <span style="font-weight:500;color:#758395">(optioneel)</span></label><div class="inputwrap"><span>€</span><input id="annual" inputmode="decimal" type="number" min="0" step="10" placeholder="600"></div></div>
-          <div class="field"><label for="months">Over hoeveel maanden komt die rekening? <span style="font-weight:500;color:#758395">(optioneel)</span></label><div class="inputwrap"><input id="months" inputmode="numeric" type="number" min="1" max="24" step="1" placeholder="3"><span>mnd</span></div></div>
-          <button class="cta full" type="submit">Laat mijn eerste GRIP zien</button>
-        </form>
-        <div id="result" class="result" aria-live="polite">
-          <div class="resulttop"><div><small style="color:#718093;font-weight:800">GESCHATTE MAANDRUIMTE</small><div id="room" class="bigmoney">€ 0</div></div><span id="status" class="badge">Op koers</span></div>
-          <p id="summary" style="color:#526175;margin:0"></p>
-          <div class="resultgrid"><div class="resultmini"><small>Buffer dekt ongeveer</small><b id="days">0 dagen</b></div><div class="resultmini"><small>Reserveren voor rekening</small><b id="reserve">€ 0 / maand</b></div></div>
-          <div class="next"><small>BESTE VOLGENDE STAP</small><b id="next">Je eerste overzicht is klaar.</b></div>
+    <section class="wrap section" id="app">
+      <div class="sectionhead"><div class="eyebrow">Werkende demo</div><h2 style="margin-top:16px">Probeer GRIP direct.</h2><p>Vul afgeronde bedragen in. De demo rekent lokaal op je apparaat en gebruikt de gegevens daarna ook voor Vooruit, Kansen, Wat als? en Rustbuffer.</p></div>
+      <div class="appShell">
+        <div class="appTop"><div class="appTitle"><div><h2>Mijn GRIP</h2><p id="welcomeText">Start met de Quick Check. Daarna vult de rest zichzelf.</p></div><button class="btn secondary smallbtn" id="resetBtn" type="button">Wis mijn gegevens</button></div></div>
+        <div class="appTabs" role="tablist" aria-label="GRIP onderdelen">
+          <button class="tabbtn active" type="button" role="tab" aria-selected="true" data-tab="quick">Quick Check</button>
+          <button class="tabbtn" type="button" role="tab" aria-selected="false" data-tab="today">Vandaag</button>
+          <button class="tabbtn" type="button" role="tab" aria-selected="false" data-tab="future">Vooruit</button>
+          <button class="tabbtn" type="button" role="tab" aria-selected="false" data-tab="opps">Kansen</button>
+          <button class="tabbtn" type="button" role="tab" aria-selected="false" data-tab="whatif">Wat als?</button>
+          <button class="tabbtn" type="button" role="tab" aria-selected="false" data-tab="buffer">Rustbuffer</button>
         </div>
-        <div class="privacy"><span>🔒</span><span>Privacy in deze Alpha: bedragen worden alleen gebruikt voor de berekening in je eigen browser. Er is nog geen account of serveropslag.</span></div>
+
+        <section class="appPanel active" id="panel-quick" role="tabpanel">
+          <div class="dashboard">
+            <div class="light">
+              <div class="label">Stap 1 · Basisoverzicht</div><h3 style="font-size:26px;margin:6px 0 4px">GRIP Quick Check</h3><p>Rond gerust af. Het doel is eerst overzicht, niet perfectie.</p>
+              <form id="quickForm">
+                <div class="formgrid">
+                  <div class="field"><label for="income">Netto inkomen per maand</label><div class="input"><span>€</span><input id="income" type="number" inputmode="decimal" min="0" step="10" placeholder="2500" required></div></div>
+                  <div class="field"><label for="fixed">Vaste lasten per maand</label><div class="input"><span>€</span><input id="fixed" type="number" inputmode="decimal" min="0" step="10" placeholder="1550" required></div><div class="hint">Wonen, energie, verzekeringen, telefoon, abonnementen.</div></div>
+                  <div class="field"><label for="living">Boodschappen, vervoer & overige uitgaven</label><div class="input"><span>€</span><input id="living" type="number" inputmode="decimal" min="0" step="10" placeholder="500" required></div></div>
+                  <div class="field"><label for="savings">Beschikbare buffer / spaargeld</label><div class="input"><span>€</span><input id="savings" type="number" inputmode="decimal" min="0" step="10" placeholder="1200" required></div></div>
+                  <div class="field"><label for="annual">Grotere rekening die eraan komt <span style="font-weight:500">(optioneel)</span></label><div class="input"><span>€</span><input id="annual" type="number" inputmode="decimal" min="0" step="10" placeholder="600"></div></div>
+                  <div class="field"><label for="months">Over hoeveel maanden?</label><div class="input"><input id="months" type="number" inputmode="numeric" min="1" max="24" step="1" placeholder="3"><span>mnd</span></div></div>
+                  <div class="field"><label for="subscriptions">Abonnementen per maand <span style="font-weight:500">(optioneel)</span></label><div class="input"><span>€</span><input id="subscriptions" type="number" inputmode="decimal" min="0" step="1" placeholder="65"></div></div>
+                  <div class="field"><label for="phone">Telefoon/internet per maand <span style="font-weight:500">(optioneel)</span></label><div class="input"><span>€</span><input id="phone" type="number" inputmode="decimal" min="0" step="1" placeholder="75"></div></div>
+                </div>
+                <button class="btn primary" type="submit">Bereken mijn GRIP</button>
+              </form>
+              <div class="resultbox" id="quickResult" aria-live="polite">
+                <div class="label">Geschatte vrije maandruimte</div><div class="kpi" id="marginOut">€0</div><p id="resultText"></p>
+                <div class="resultcards"><div class="rmini"><small>Buffer dekt ongeveer</small><b id="daysOut">0 dagen</b></div><div class="rmini"><small>Reserveer voor rekening</small><b id="reserveOut">€0 p/m</b></div><div class="rmini"><small>Vaste lasten</small><b id="fixedRatioOut">0%</b></div></div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="label" style="color:#b8f5dc">Waarom deze velden?</div><h3 style="font-size:26px;margin:7px 0 10px">Alleen wat nodig is voor een eerste beeld.</h3><p>In deze Alpha vragen we geen banklogin, BSN, adres of andere gevoelige identificatiegegevens.</p>
+              <div class="darkList" style="margin-top:18px">
+                <div class="listitem"><div><small>Inkomen</small><strong>Wat komt er binnen?</strong></div><span aria-hidden="true">→</span></div>
+                <div class="listitem"><div><small>Uitgaven</small><strong>Wat gaat er normaal uit?</strong></div><span aria-hidden="true">→</span></div>
+                <div class="listitem"><div><small>Buffer</small><strong>Hoeveel ademruimte is er?</strong></div><span aria-hidden="true">→</span></div>
+                <div class="listitem"><div><small>Toekomst</small><strong>Welke rekening komt eraan?</strong></div><span aria-hidden="true">→</span></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="appPanel" id="panel-today" role="tabpanel">
+          <div class="dashboard">
+            <div class="light">
+              <div class="label">Vandaag</div><h3 id="todayHeadline" style="font-size:28px;margin:7px 0 6px">Vul eerst de Quick Check in.</h3><div class="kpi" id="todayMoney">€ —</div><p id="todayExplain">Daarna zie je hier je geschatte maandruimte en één duidelijke volgende stap.</p>
+              <div class="progress" aria-label="Aandeel van inkomen dat na normale uitgaven overblijft"><span id="roomBar"></span></div><div class="hint" id="roomText">Nog geen gegevens.</div>
+            </div>
+            <div class="card"><div class="label" style="color:#b8f5dc">Beste actie van vandaag</div><h3 id="bestAction" style="font-size:25px;margin:8px 0">Doe eerst de Quick Check.</h3><p id="bestActionText">GRIP kiest daarna een passende volgende stap op basis van jouw ingevoerde bedragen.</p><button class="btn secondary smallbtn" type="button" data-jump="quick" style="margin-top:12px">Naar Quick Check</button></div>
+          </div>
+        </section>
+
+        <section class="appPanel" id="panel-future" role="tabpanel">
+          <div class="grid2">
+            <div>
+              <div class="label" style="color:#b8f5dc">Tomorrow</div><h3 style="font-size:29px;margin:7px 0 16px">Zie problemen eerder aankomen.</h3>
+              <div class="timeline" id="timeline"></div>
+            </div>
+            <div class="card"><h3>Wat rekent GRIP hier?</h3><p>Een eenvoudige prognose op basis van jouw huidige maandruimte en de grotere rekening die je zelf hebt ingevoerd. Het is een hulpmiddel, geen garantie.</p><div class="darkList" style="margin-top:16px"><div class="listitem"><span>Na 1 maand</span><b id="f1">—</b></div><div class="listitem"><span>Na 3 maanden</span><b id="f3">—</b></div><div class="listitem"><span>Na 6 maanden</span><b id="f6">—</b></div><div class="listitem"><span>Na 12 maanden</span><b id="f12">—</b></div></div></div>
+          </div>
+        </section>
+
+        <section class="appPanel" id="panel-opps" role="tabpanel">
+          <div class="sectionhead" style="margin-bottom:20px"><h2 style="font-size:34px">Kansen die het bekijken waard zijn.</h2><p>GRIP geeft geen opdracht om iets op te zeggen. Het markeert alleen posten die mogelijk aandacht verdienen.</p></div>
+          <div class="opportunities" id="opportunityList"></div>
+        </section>
+
+        <section class="appPanel" id="panel-whatif" role="tabpanel">
+          <div class="dashboard">
+            <div class="light">
+              <div class="label">Scenario</div><h3 style="font-size:27px;margin:7px 0 6px">Wat als er iets verandert?</h3><p>Test een verandering zonder je opgeslagen basisgegevens aan te passen.</p>
+              <form id="scenarioForm">
+                <div class="field"><label for="incomeChange">Verandering in maandinkomen</label><div class="input"><span>€</span><input id="incomeChange" type="number" step="10" placeholder="bijv. -200 of 300"></div><div class="hint">Negatief bij minder inkomen, positief bij meer.</div></div>
+                <div class="field"><label for="costChange">Verandering in maandelijkse kosten</label><div class="input"><span>€</span><input id="costChange" type="number" step="10" placeholder="bijv. 150"></div></div>
+                <div class="field"><label for="oneoff">Eenmalige uitgave</label><div class="input"><span>€</span><input id="oneoff" type="number" min="0" step="10" placeholder="bijv. 500"></div></div>
+                <button class="btn primary" type="submit">Bereken scenario</button>
+              </form>
+              <div class="resultbox" id="scenarioResult" aria-live="polite"><div class="label">Nieuwe maandruimte</div><div class="kpi" id="scenarioMargin">€0</div><p id="scenarioText"></p></div>
+            </div>
+            <div class="card"><div class="label" style="color:#b8f5dc">Voorbeelden</div><h3 style="font-size:26px;margin:8px 0">Probeer levenskeuzes vooraf.</h3><p>Bijvoorbeeld: één dag minder werken, een nieuwe auto, hogere huur, een abonnement erbij of juist een besparing.</p><div class="darkList" style="margin-top:16px"><button type="button" class="listitem preset" data-income="-250" data-cost="0" data-oneoff="0" style="color:#fff;text-align:left"><span>1 dag minder werken</span><b>− €250 inkomen</b></button><button type="button" class="listitem preset" data-income="0" data-cost="220" data-oneoff="0" style="color:#fff;text-align:left"><span>Auto erbij</span><b>+ €220 kosten</b></button><button type="button" class="listitem preset" data-income="0" data-cost="-75" data-oneoff="0" style="color:#fff;text-align:left"><span>Besparing gevonden</span><b>− €75 kosten</b></button></div></div>
+          </div>
+        </section>
+
+        <section class="appPanel" id="panel-buffer" role="tabpanel">
+          <div class="dashboard">
+            <div class="light"><div class="label">Financiële ademruimte</div><div class="kpi" id="bufferDays">0 dagen</div><p id="bufferExplain">Vul de Quick Check in om te zien hoeveel dagen je huidige buffer ongeveer je normale noodzakelijke uitgaven kan dragen.</p><div class="progress"><span id="bufferBar"></span></div><div class="hint" id="bufferTarget">Eerste mijlpaal: 30 dagen.</div></div>
+            <div class="card"><h3>Waarom dagen in plaats van een score?</h3><p>Een rapportcijfer kan veroordelend voelen. Dagen zijn concreter: hoeveel tijd geeft je buffer je als je tijdelijk minder inkomen hebt?</p><div class="darkList" style="margin-top:16px"><div class="listitem"><span>30 dagen</span><b>Eerste rustlaag</b></div><div class="listitem"><span>60 dagen</span><b>Meer ademruimte</b></div><div class="listitem"><span>90 dagen</span><b>Sterkere buffer</b></div></div></div>
+          </div>
+        </section>
       </div>
     </section>
 
-    <section class="wrap section" id="visie">
-      <div class="sectionhead"><h2>Vandaag begrijpen.<br>Morgen zien aankomen.</h2><p>De volgende versies van GRIP bouwen door naar een persoonlijke financiële tijdlijn, kansen, scenario's en uiteindelijk veilige automatische koppelingen.</p></div>
-      <div class="grid3">
-        <article class="card"><div class="icon">30</div><h3>30 dagen</h3><p>Welke rekeningen komen eraan en blijft je verwachte saldo positief?</p></article>
-        <article class="card"><div class="icon">90</div><h3>90 dagen</h3><p>Zie dure maanden eerder aankomen en verdeel grotere uitgaven vooraf.</p></article>
-        <article class="card"><div class="icon">∞</div><h3>Wat als?</h3><p>Later kun je scenario's vergelijken: verhuizen, minder werken, een auto of andere levenskeuzes.</p></article>
+    <section class="wrap section" id="rust">
+      <div class="photoBand">
+        <figure class="photo" style="margin:0"><img src="https://images.unsplash.com/photo-1758686254550-c5d8f4de1b3a?auto=format&fit=crop&w=1400&q=82" alt="Ouder stel bespreekt rustig hun huishoudelijke financiën thuis" loading="lazy" decoding="async"><figcaption class="photoText"><h3>Financiële rust is voor iedere levensfase.</h3><p>GRIP moet begrijpelijk blijven voor jongvolwassenen, gezinnen en ouderen — niet alleen voor mensen die van spreadsheets houden.</p></figcaption></figure>
+        <div class="quoteCard"><div class="eyebrow">Ontwerpprincipe</div><h3>Geen schuldgevoel. Wel duidelijkheid en een volgende stap.</h3><p>GRIP zegt niet dat je “slecht met geld” bent. Het laat zien wat er gebeurt, waarom dat belangrijk is en wat je eventueel kunt doen.</p><a class="btn primary" href="#app" style="align-self:flex-start">Probeer mijn situatie</a></div>
       </div>
     </section>
 
-    <section class="wrap section"><div class="band"><div><h3>Financiële rust begint met weten waar je staat.</h3><p>Start zonder account, zonder bankkoppeling en zonder ingewikkelde instellingen.</p></div><a class="cta" href="#quick">Start mijn Quick Check</a></div></section>
+    <section class="wrap section">
+      <div class="grid2">
+        <div class="quoteCard"><div class="eyebrow">Kansen</div><h3>Geld dat je niet nodig hebt uit te geven, is ook vooruitgang.</h3><p>GRIP kan in een latere versie abonnementen, prijsstijgingen en terugkerende kosten automatisch helpen herkennen. In deze Alpha gebruiken we alleen de bedragen die je zelf invoert.</p></div>
+        <figure class="photo" style="margin:0"><img src="https://images.unsplash.com/photo-1634474588707-de99f09285c0?auto=format&fit=crop&w=1400&q=82" alt="Glazen pot met muntgeld en het label savings" loading="lazy" decoding="async"><figcaption class="photoText"><h3>Kleine verbeteringen tellen op.</h3><p>Niet elke stap hoeft groot te zijn. Minder vaste lasten of gericht reserveren kan al verschil maken.</p></figcaption></figure>
+      </div>
+    </section>
+
+    <section class="wrap section" id="faq">
+      <div class="sectionhead"><h2>Veelgestelde vragen</h2><p>De Alpha is bewust veilig en eenvoudig gehouden. Echte bankkoppelingen komen pas later en alleen via passende, gereguleerde infrastructuur.</p></div>
+      <div class="faq">
+        <details><summary>Slaat GRIP mijn bankgegevens op?</summary><p>Nee. Deze Alpha vraagt geen banklogin en heeft geen bankkoppeling. Bedragen die je invult worden alleen in lokale browseropslag bewaard zodat de demo na verversen kan blijven werken.</p></details>
+        <details><summary>Is dit financieel advies?</summary><p>Nee. De uitkomsten zijn eenvoudige schattingen op basis van de bedragen die je zelf invult. Gebruik belangrijke financiële beslissingen altijd met voldoende context en controleer officiële voorwaarden en regelingen.</p></details>
+        <details><summary>Kan ik mijn gegevens wissen?</summary><p>Ja. Gebruik bovenaan de GRIP-demo de knop “Wis mijn gegevens”. Daarmee wordt de lokale GRIP-opslag op dit apparaat verwijderd.</p></details>
+        <details><summary>Waarom nog geen account?</summary><p>We willen eerst bewijzen dat de kernfuncties echt nuttig zijn. Een account, versleutelde backend en bankkoppelingen horen bij een volgende fase.</p></details>
+      </div>
+    </section>
   </main>
 
-  <footer><div class="wrap footerin"><div><div class="logo"><span class="mark">G</span><span>GRIP</span></div><p class="tiny">GRIP Alpha is een hulpmiddel voor financieel overzicht en geeft geen persoonlijk financieel, beleggings-, krediet- of belastingadvies. Berekeningen zijn schattingen op basis van wat je zelf invult.</p></div><div>© 2026 GRIP · Alpha</div></div></footer>
+  <footer class="footer"><div class="wrap footerin"><div><strong style="color:#fff">GRIP Alpha</strong><br>Meer grip op je geld. Minder zorgen over morgen.</div><div class="credit">Demo voor huishoudelijk financieel inzicht. Foto's via <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a>.</div></div></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
   <script>
-    const euro = n => new Intl.NumberFormat('nl-NL',{style:'currency',currency:'EUR',maximumFractionDigits:0}).format(n);
-    document.getElementById('gripForm').addEventListener('submit', (e) => {
-      e.preventDefault();
-      const income = Number(document.getElementById('income').value||0);
-      const fixed = Number(document.getElementById('fixed').value||0);
-      const living = Number(document.getElementById('living').value||0);
-      const savings = Number(document.getElementById('savings').value||0);
-      const annual = Number(document.getElementById('annual').value||0);
-      const months = Math.max(1,Number(document.getElementById('months').value||1));
-      const room = income-fixed-living;
-      const necessary = Math.max(1,fixed+living);
-      const daily = necessary/30.4;
-      const days = Math.max(0,Math.round(savings/daily));
-      const reserve = annual>0 ? Math.ceil(annual/months) : 0;
-      const afterReserve = room-reserve;
-      const roomEl = document.getElementById('room');
-      const status = document.getElementById('status');
-      const summary = document.getElementById('summary');
-      const next = document.getElementById('next');
-      roomEl.textContent = euro(room);
-      document.getElementById('days').textContent = `${days} ${days===1?'dag':'dagen'}`;
-      document.getElementById('reserve').textContent = annual>0 ? `${euro(reserve)} / maand` : 'Geen ingevoerd';
-      if(room < 0){status.textContent='Aandacht nodig';status.style.background='#fff0f1';status.style.color='#a33a49';summary.textContent=`Op basis van deze grove bedragen kom je ongeveer ${euro(Math.abs(room))} per maand tekort. Dit is een signaal om eerst de grootste kosten en inkomsten rustig te bekijken.`;next.textContent='Begin met je drie grootste maandelijkse kosten. Controleer daarna welke daarvan echt vast zijn.'}
-      else if(afterReserve < 0 && annual>0){status.textContent='Krap na reserveren';status.style.background='#fff6df';status.style.color='#8a6413';summary.textContent=`Je gewone maand lijkt ongeveer ${euro(room)} ruimte te hebben, maar de ingevoerde rekening vraagt circa ${euro(reserve)} per maand als je die gelijkmatig wilt opbouwen.`;next.textContent=`Kijk of je de komende maanden minimaal ${euro(reserve)} kunt reserveren of verdeel de rekening op een andere haalbare manier.`}
-      else {status.textContent='Op koers';status.style.background='#e8f8f1';status.style.color='#176545';summary.textContent=`Na de bedragen die je invulde blijft er ongeveer ${euro(room)} per maand over${annual>0?`, of circa ${euro(afterReserve)} nadat je reserveert voor de bekende rekening`:''}.`;next.textContent=annual>0?`Reserveer ongeveer ${euro(reserve)} per maand voor de rekening die eraan komt.`:'Voeg later bekende jaarlijkse rekeningen toe om verrassingen eerder zichtbaar te maken.'}
-      document.getElementById('result').classList.add('show');
-      document.getElementById('result').scrollIntoView({behavior:'smooth',block:'nearest'});
+    const STORAGE_KEY='grip-alpha-v2';
+    const $=id=>document.getElementById(id);
+    const euro=n=>new Intl.NumberFormat('nl-NL',{style:'currency',currency:'EUR',maximumFractionDigits:0}).format(Number.isFinite(n)?n:0);
+    const pct=n=>`${Math.round(Number.isFinite(n)?n:0)}%`;
+    const clamp=(n,min,max)=>Math.min(max,Math.max(min,n));
+    let data=load();
+
+    function load(){try{return JSON.parse(localStorage.getItem(STORAGE_KEY))||null}catch{return null}}
+    function save(d){data=d;localStorage.setItem(STORAGE_KEY,JSON.stringify(d));renderAll();toast('Je GRIP is lokaal opgeslagen.');}
+    function toast(msg){const t=$('toast');t.textContent=msg;t.classList.add('show');clearTimeout(window.__toast);window.__toast=setTimeout(()=>t.classList.remove('show'),2300)}
+    function num(id){return Number($(id).value||0)}
+    function essentials(d){return Math.max(0,(d.fixed||0)+(d.living||0))}
+    function margin(d){return (d.income||0)-essentials(d)}
+    function bufferDaysCalc(d){const daily=essentials(d)/30.4;return daily>0?Math.max(0,(d.savings||0)/daily):0}
+    function fixedRatio(d){return d.income>0?(d.fixed/d.income)*100:0}
+    function roomRatio(d){return d.income>0?margin(d)/d.income*100:0}
+    function reserveMonthly(d){return d.annual>0&&d.months>0?d.annual/d.months:0}
+
+    function renderAll(){
+      renderHero();renderToday();renderFuture();renderOpps();renderBuffer();prefill();
+      $('welcomeText').textContent=data?'Je basisgegevens zijn opgeslagen op dit apparaat. Je kunt alle onderdelen gebruiken.':'Start met de Quick Check. Daarna vult de rest zichzelf.';
+    }
+    function renderHero(){
+      if(!data){$('heroMoney').textContent='€ —';$('heroMargin').textContent='Nog invullen';$('heroDays').textContent='Nog invullen';$('heroStatus').textContent='Je eerste overzicht staat klaar.';return}
+      const m=margin(data),days=bufferDaysCalc(data);
+      $('heroMoney').textContent=euro(Math.max(0,m));$('heroMargin').textContent=m>=0?`${euro(m)} over`:`${euro(Math.abs(m))} tekort`;$('heroDays').textContent=`${Math.round(days)} dagen`;
+      $('heroStatus').textContent=m>=0?'Je maand is op basis van deze schatting positief.':'Je uitgaven liggen op basis van deze schatting boven je inkomen.';
+    }
+    function renderToday(){
+      if(!data){$('todayHeadline').textContent='Vul eerst de Quick Check in.';$('todayMoney').textContent='€ —';$('todayExplain').textContent='Daarna zie je hier je geschatte maandruimte en één duidelijke volgende stap.';$('roomBar').style.width='0%';$('roomText').textContent='Nog geen gegevens.';$('bestAction').textContent='Doe eerst de Quick Check.';$('bestActionText').textContent='GRIP kiest daarna een passende volgende stap op basis van jouw ingevoerde bedragen.';return}
+      const m=margin(data),r=reserveMonthly(data),days=bufferDaysCalc(data),rr=roomRatio(data);
+      $('todayMoney').textContent=euro(m);$('roomBar').style.width=`${clamp(rr,0,100)}%`;$('roomText').textContent=m>=0?`Ongeveer ${pct(Math.max(0,rr))} van je inkomen blijft na de ingevoerde normale uitgaven over.`:'De ingevoerde normale uitgaven zijn hoger dan je inkomen.';
+      if(m<0){$('todayHeadline').textContent='Er is nu weinig financiële ruimte.';$('todayExplain').textContent=`Op basis van je invoer kom je ongeveer ${euro(Math.abs(m))} per maand tekort.`;$('bestAction').textContent='Kijk eerst naar de grootste maandelijkse uitgaven.';$('bestActionText').textContent='Begin met vaste lasten en terugkerende kosten. Eén structurele verbetering werkt iedere maand door.';}
+      else if(r>0&&m-r<0){$('todayHeadline').textContent='Je maand is positief, maar de komende rekening vraagt aandacht.';$('todayExplain').textContent=`Na je normale uitgaven blijft ongeveer ${euro(m)} over.`;$('bestAction').textContent=`Reserveer ongeveer ${euro(r)} per maand.`;$('bestActionText').textContent='Met deze verdeling spreid je de grotere rekening over de resterende maanden.';}
+      else if(days<30){$('todayHeadline').textContent='Je maandruimte is positief.';$('todayExplain').textContent=`Na je ingevoerde normale uitgaven blijft ongeveer ${euro(m)} over.`;$('bestAction').textContent='Bouw eerst je rustbuffer verder op.';$('bestActionText').textContent=`Je buffer dekt nu ongeveer ${Math.round(days)} dagen van je ingevoerde normale uitgaven.`;}
+      else{$('todayHeadline').textContent='Je ligt op basis van deze invoer op koers.';$('todayExplain').textContent=`Na je ingevoerde normale uitgaven blijft ongeveer ${euro(m)} over.`;$('bestAction').textContent='Vandaag hoef je niets dringends te doen.';$('bestActionText').textContent='Je maandruimte en buffer geven op basis van deze eenvoudige schatting voldoende ademruimte. Controleer wel periodiek of je bedragen nog kloppen.';}
+    }
+    function projection(month){if(!data)return null;let value=(data.savings||0)+margin(data)*month;if(data.annual>0&&data.months>0&&month>=data.months)value-=data.annual;return value}
+    function renderFuture(){
+      const tl=$('timeline');tl.innerHTML='';
+      if(!data){tl.innerHTML='<div class="timeitem"><h3>Eerst Quick Check</h3><p>Vul je basisgegevens in om een eenvoudige tijdlijn te maken.</p></div>';['f1','f3','f6','f12'].forEach(id=>$(id).textContent='—');return}
+      const points=[1,3,6,12];points.forEach(m=>{const v=projection(m);const item=document.createElement('div');item.className=`timeitem ${v<0?'danger':v<(essentials(data)*.5)?'warn':''}`;item.innerHTML=`<small>OVER ${m} ${m===1?'MAAND':'MAANDEN'}</small><h3>${euro(v)}</h3><p>${v<0?'Op basis van deze invoer zou je totale buffer dan negatief worden.':data.annual>0&&data.months>0&&m>=data.months?'Inclusief de grotere ingevoerde rekening.':'Na de normale maandruimte, zonder nieuwe onverwachte uitgaven.'}</p>`;tl.appendChild(item);$('f'+m).textContent=euro(v)});
+    }
+    function renderOpps(){
+      const list=$('opportunityList');list.innerHTML='';
+      if(!data){list.innerHTML='<div class="card"><h3>Vul eerst de Quick Check in.</h3><p>Daarna maakt GRIP aandachtspunten op basis van jouw eigen bedragen.</p></div>';return}
+      const items=[];const m=margin(data),fr=fixedRatio(data),days=bufferDaysCalc(data);
+      if(m<0)items.push(['↘','Maandtekort eerst aanpakken','Je normale uitgaven liggen hoger dan je inkomen. Begin bij structurele kosten.','hoog']);
+      if(fr>60)items.push(['⌂','Vaste lasten controleren',`Ongeveer ${pct(fr)} van je inkomen gaat naar vaste lasten. Kijk of alle posten nog nodig en actueel zijn.`,'bekijken']);
+      if(data.subscriptions>=60)items.push(['◫','Abonnementen nalopen',`Je hebt ongeveer ${euro(data.subscriptions)} per maand aan abonnementen ingevuld. Controleer dubbelingen en weinig gebruikte diensten.`,`${euro(data.subscriptions*12)}/jr`]);
+      if(data.phone>=75)items.push(['⌁','Telefoon en internet vergelijken',`Je hebt ongeveer ${euro(data.phone)} per maand ingevuld. Controleer contractduur, bundels en ongebruikte extra's.`,'bekijken']);
+      if(days<30)items.push(['○','Rustbuffer opbouwen',`Je buffer dekt ongeveer ${Math.round(days)} dagen. Een eerste mijlpaal kan 30 dagen normale uitgaven zijn.`,`${Math.max(0,Math.round(30-days))} dagen`]);
+      if(data.annual>0&&data.months>0)items.push(['→','Grotere rekening spreiden',`Voor ${euro(data.annual)} over ${data.months} maanden kun je ongeveer ${euro(reserveMonthly(data))} per maand reserveren.`,`${euro(reserveMonthly(data))}/mnd`]);
+      if(!items.length)items.push(['✓','Geen duidelijke aandachtspunten gevonden','Op basis van de beperkte Alpha-invoer ziet GRIP nu geen opvallende signalen. Controleer je bedragen af en toe opnieuw.','rustig']);
+      items.forEach(([i,t,d,v])=>{const el=document.createElement('div');el.className='opp';el.innerHTML=`<div class="oppIcon" aria-hidden="true">${i}</div><div><strong>${t}</strong><small>${d}</small></div><div class="oppValue">${v}</div>`;list.appendChild(el)});
+    }
+    function renderBuffer(){
+      if(!data){$('bufferDays').textContent='0 dagen';$('bufferExplain').textContent='Vul de Quick Check in om te zien hoeveel dagen je huidige buffer ongeveer je normale noodzakelijke uitgaven kan dragen.';$('bufferBar').style.width='0%';$('bufferTarget').textContent='Eerste mijlpaal: 30 dagen.';return}
+      const d=bufferDaysCalc(data);$('bufferDays').textContent=`${Math.round(d)} dagen`;$('bufferBar').style.width=`${clamp(d/90*100,0,100)}%`;
+      if(d<30){const need=Math.max(0,essentials(data)*(30/30.4)-(data.savings||0));$('bufferExplain').textContent=`Je huidige buffer dekt ongeveer ${Math.round(d)} dagen van je ingevoerde normale uitgaven.`;$('bufferTarget').textContent=`Voor ongeveer 30 dagen mist op basis van deze schatting nog ${euro(need)}.`}
+      else if(d<60){$('bufferExplain').textContent='Je hebt de eerste rustlaag van ongeveer 30 dagen bereikt.';$('bufferTarget').textContent='Volgende mijlpaal: 60 dagen.'}
+      else if(d<90){$('bufferExplain').textContent='Je buffer geeft op basis van deze invoer meerdere weken ademruimte.';$('bufferTarget').textContent='Volgende mijlpaal: 90 dagen.'}
+      else{$('bufferExplain').textContent='Je buffer is op basis van deze eenvoudige berekening groter dan 90 dagen normale uitgaven.';$('bufferTarget').textContent='Blijf controleren of je ingevoerde uitgaven actueel blijven.'}
+    }
+    function prefill(){if(!data)return;['income','fixed','living','savings','annual','months','subscriptions','phone'].forEach(id=>{if($(id)&&data[id]!==undefined)$(id).value=data[id]||''})}
+
+    $('quickForm').addEventListener('submit',e=>{
+      e.preventDefault();const d={income:num('income'),fixed:num('fixed'),living:num('living'),savings:num('savings'),annual:num('annual'),months:num('months'),subscriptions:num('subscriptions'),phone:num('phone')};
+      if(d.income<=0){toast('Vul een inkomen groter dan €0 in.');return}if(d.fixed<0||d.living<0||d.savings<0){toast('Gebruik alleen positieve basisbedragen.');return}
+      save(d);const m=margin(d),days=bufferDaysCalc(d),r=reserveMonthly(d),fr=fixedRatio(d);$('marginOut').textContent=euro(m);$('daysOut').textContent=`${Math.round(days)} dagen`;$('reserveOut').textContent=r>0?`${euro(r)} p/m`:'Niet ingevuld';$('fixedRatioOut').textContent=pct(fr);$('resultText').textContent=m>=0?`Na je ingevoerde normale uitgaven blijft ongeveer ${euro(m)} per maand over.`:`Je ingevoerde normale uitgaven zijn ongeveer ${euro(Math.abs(m))} hoger dan je maandinkomen.`;$('quickResult').classList.add('show');
     });
+    $('scenarioForm').addEventListener('submit',e=>{e.preventDefault();if(!data){toast('Doe eerst de Quick Check.');return}const inc=Number($('incomeChange').value||0),cost=Number($('costChange').value||0),one=Math.max(0,Number($('oneoff').value||0));const base=margin(data),nm=base+inc-cost;const afterBuffer=Math.max(0,(data.savings||0)-one);$('scenarioMargin').textContent=euro(nm);$('scenarioText').textContent=`Je basisruimte is ${euro(base)} per maand. In dit scenario wordt dat ${euro(nm)} per maand. Na de eenmalige uitgave zou van je ingevoerde buffer ongeveer ${euro(afterBuffer)} overblijven.`;$('scenarioResult').classList.add('show')});
+    document.querySelectorAll('.preset').forEach(b=>b.addEventListener('click',()=>{$('incomeChange').value=b.dataset.income;$('costChange').value=b.dataset.cost;$('oneoff').value=b.dataset.oneoff;toast('Voorbeeldscenario ingevuld.')}));
+    document.querySelectorAll('.tabbtn').forEach(btn=>btn.addEventListener('click',()=>switchTab(btn.dataset.tab)));
+    document.querySelectorAll('[data-jump]').forEach(b=>b.addEventListener('click',()=>switchTab(b.dataset.jump)));
+    function switchTab(name){document.querySelectorAll('.tabbtn').forEach(b=>{const a=b.dataset.tab===name;b.classList.toggle('active',a);b.setAttribute('aria-selected',a?'true':'false')});document.querySelectorAll('.appPanel').forEach(p=>p.classList.toggle('active',p.id===`panel-${name}`));$('app').scrollIntoView({behavior:'smooth',block:'start'})}
+    $('resetBtn').addEventListener('click',()=>{if(!confirm('Wil je de lokaal opgeslagen GRIP-gegevens op dit apparaat wissen?'))return;localStorage.removeItem(STORAGE_KEY);data=null;['income','fixed','living','savings','annual','months','subscriptions','phone','incomeChange','costChange','oneoff'].forEach(id=>{if($(id))$(id).value=''});$('quickResult').classList.remove('show');$('scenarioResult').classList.remove('show');renderAll();toast('Je lokale GRIP-gegevens zijn gewist.')});
+    renderAll();
   </script>
 </body>
 </html>
